@@ -16,6 +16,8 @@ export const WhatWeOfferStyle = styled.div`
     justify-content: space-between;
 
     .what-we-offer-card {
+      width: 100%;
+
       &:not(:first-child) {
         margin-left: 50px;
       }
@@ -29,7 +31,7 @@ export const WhatWeOfferStyle = styled.div`
   }
 
   .img-container {
-    /* height: 500px; */
+    height: auto;
     width: 500px;
 
     img {

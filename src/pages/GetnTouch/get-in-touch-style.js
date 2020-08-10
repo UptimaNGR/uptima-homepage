@@ -132,6 +132,7 @@ export const GetInTouchStyle = styled.div`
           font-size: 13px;
           font-weight: 600;
           cursor: pointer;
+          font-family: 'Nunito', sans-serif;
         }
       }
     }
@@ -139,6 +140,9 @@ export const GetInTouchStyle = styled.div`
 
   .next-step {
     /* position: relative; */
+    h4 {
+      font-size: 22px;
+    }
 
     .steps {
       position: relative;

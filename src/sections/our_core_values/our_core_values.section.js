@@ -20,27 +20,27 @@ export default function OurCoreValues() {
       brief: 'We are committed to making sure our customers get utmost satisfaction from our products and services.',
     },
     {
-      title: 'Customer Commitment',
+      title: 'A Will To Win',
       image: <Trophy {...config} />,
       brief: 'We exhibit the drive in the market place and every aspect of our business.',
     },
     {
-      title: 'Customer Commitment',
+      title: 'Passion',
       image: <Passion {...config} />,
       brief: 'We love wha we do.',
     },
     {
-      title: 'Customer Commitment',
+      title: 'Team Work',
       image: <Hands {...config} />,
       brief: 'We always work together to achieve the best result.',
     },
     {
-      title: 'Customer Commitment',
+      title: 'Innovation',
       image: <Light {...config} />,
       brief: 'We continuously develop more simplified, efficient, and creative product, process and services.  ',
     },
     {
-      title: 'Customer Commitment',
+      title: 'Accountability',
       image: <SunShine {...config} />,
       brief: 'We are personally accountable for devilering on our commitment.',
     },

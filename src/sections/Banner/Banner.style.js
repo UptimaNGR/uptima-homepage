@@ -2,21 +2,28 @@ import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
 export const BannerStyle = styled.div`
-  height: 80%;
-
-  background: #edf6ff;
-  height: 75vh;
-  clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
+  /* height: 80%; */
+  /* background: #edf6ff; */
+  /* height: 70vh; */
   position: relative;
   z-index: 5;
-  overflow: hidden;
+  overflow-x: hidden;
   margin-bottom: 60px;
+
+  .banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80vh;
+  }
 `;
 
 export const BannerStyleContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 0;
 `;
 
 export const BannerHeading = styled.h3`
@@ -28,7 +35,9 @@ export const BannerHeading = styled.h3`
 export const BannerBriefText = styled.h3`
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.7rem;
+  line-height: 1.5rem;
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 0.3px;
 `;
 
 export const BannerButton = styled(Link)`
@@ -48,8 +57,8 @@ export const BannerButton = styled(Link)`
 export const BannerImgContainer = styled.div`
   height: 400px;
   position: relative;
-  left: 120px;
-  /* top: 50px; */
+  /* left: 50px; */
+  top: 30px;
 `;
 
 export const BannerImg = styled.img`
@@ -62,3 +71,5 @@ export const BannerText = styled.div`
   flex-direction: column;
   justify-content: center;
 `;
+
+export const BannerContainer = styled.div``;

@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { TimelineLite } from 'gsap/all';
 import BannerImage from 'assets/img/Group_81.png';
-import { BannerStyle, BannerBriefText, BannerHeading, BannerButton, BannerImg, BannerText, BannerImgContainer, BannerStyleContainer } from './Banner.style';
+import Bg from 'assets/img/bg.png';
+import { BannerStyle, BannerBriefText, BannerHeading, BannerButton, BannerImg, BannerText, BannerImgContainer, BannerStyleContainer, BannerContainer } from './Banner.style';
 import { Container } from 'App.style';
 import Typed from 'react-typed';
 import { Link, animateScroll as scroll } from 'react-scroll';
@@ -18,6 +19,7 @@ export default function Banner() {
 
   return (
     <BannerStyle>
+      <img src={Bg} alt="image" />
       <Container>
         <BannerStyleContainer>
           <BannerText>

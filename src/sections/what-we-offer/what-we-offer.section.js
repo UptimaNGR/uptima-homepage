@@ -14,7 +14,7 @@ export default function WhatWeOffer() {
           <h4>U-Track</h4>
           <p>U-Track is an on demand cloud computing solution for remote monitoring of tanks and tankers within the oil and gas industry.</p>
         </div>
-        <div className="what-we-offer-card">
+        <div className="what-we-offer-card right">
           <div className="img-container">
             <img src={ShotImg} />
           </div>
