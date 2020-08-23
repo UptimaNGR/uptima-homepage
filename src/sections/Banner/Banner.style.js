@@ -1,75 +1,104 @@
 import styled from 'styled-components';
-import { Link } from 'react-scroll';
+import { HashLink as Link } from 'react-router-hash-link';
 
 export const BannerStyle = styled.div`
-  /* height: 80%; */
-  /* background: #edf6ff; */
-  /* height: 70vh; */
-  position: relative;
-  z-index: 5;
-  overflow-x: hidden;
-  margin-bottom: 60px;
+	position: relative;
+	z-index: 5;
+	overflow-x: hidden;
+	margin-bottom: 60px;
 
-  .banner-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 80vh;
-  }
+	.banner-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		height: 80vh;
+	}
+
+	.banner-top-img {
+		@media (max-width: 768px) {
+			display: block;
+			height: 50vh;
+		}
+	}
 `;
 
 export const BannerStyleContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+
+	@media (max-width: 768px) {
+		display: block;
+		width: inherit;
+	}
 `;
 
 export const BannerHeading = styled.h3`
-  font-size: 32px;
-  font-family: 'Nunito', sans-serif;
-  margin: 0;
+	font-size: 32px;
+	font-family: 'Nunito', sans-serif;
+	margin: 0;
+
+	@media (max-width: 768px) {
+		font-size: 23.5px;
+	}
 `;
 
 export const BannerBriefText = styled.h3`
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5rem;
-  font-family: 'Rubik', sans-serif;
-  letter-spacing: 0.3px;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.5rem;
+	font-family: 'Rubik', sans-serif;
+
+	@media (max-width: 480px) {
+		line-height: 1.5rem;
+		font-size: 16px;
+		letter-spacing: 0px;
+		font-weight: 300;
+		margin-bottom: 40px;
+	}
 `;
 
 export const BannerButton = styled(Link)`
-  font-size: 14px;
-  font-weight: 600;
-  padding: 18px 40px;
-  color: #fff;
-  border: none;
-  outline: none;
-  background: #050484;
-  border-radius: 30px;
-  cursor: pointer;
-  align-self: flex-start;
-  font-family: 'Nunito', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 18px 40px;
+	color: #fff;
+	border: none;
+	outline: none;
+	background: #050484;
+	border-radius: 30px;
+	cursor: pointer;
+	align-self: flex-start;
+	font-family: 'Nunito', sans-serif;
+	text-decoration: none;
 `;
 
 export const BannerImgContainer = styled.div`
-  height: 400px;
-  position: relative;
-  /* left: 50px; */
-  top: 30px;
+	height: 400px;
+	position: relative;
+	top: 30px;
+
+	@media (max-width: 768px) {
+		display: none;
+		top: 0px;
+	}
 `;
 
 export const BannerImg = styled.img`
-  height: auto;
-  width: 100%;
+	height: auto;
+	width: 100%;
 `;
 
 export const BannerText = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	top: 20px;
 `;
 
 export const BannerContainer = styled.div``;

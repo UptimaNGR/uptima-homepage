@@ -4,8 +4,8 @@ import ShotImg from 'assets/img/shot.png';
 
 export default function WhatWeOffer() {
 	return (
-		<WhatWeOfferStyle>
-			<h3 id="offer">What We Offer</h3>
+		<WhatWeOfferStyle id="offer">
+			<h3>What We Offer</h3>
 			<div className="what-we-offer-cards">
 				<div className="what-we-offer-card">
 					<div className="img-container">

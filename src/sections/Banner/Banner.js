@@ -23,7 +23,7 @@ export default function Banner() {
 
 	return (
 		<BannerStyle>
-			<img src={Bg} alt="banner" />
+			<img src={Bg} alt="banner" className="banner-top-img" />
 			<Container>
 				<BannerStyleContainer>
 					<BannerText>
@@ -35,7 +35,7 @@ export default function Banner() {
 							been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
 							galley of type and scrambled it to make a type specimen book.
 						</BannerBriefText>
-						<BannerButton data-aos="zoom-out" data-aos-duration={2000} to="/#who-we-are" offset={-20}>
+						<BannerButton data-aos="zoom-out" data-aos-duration={2000} to="#who-we-are" offset={-20}>
 							Get Started
 						</BannerButton>
 					</BannerText>

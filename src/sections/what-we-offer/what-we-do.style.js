@@ -1,42 +1,51 @@
 import styled from 'styled-components';
 
 export const WhatWeOfferStyle = styled.div`
-  margin-bottom: 100px;
+	margin-bottom: 100px;
 
-  h3 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 25px;
-  }
+	h3 {
+		text-align: center;
+		margin-bottom: 40px;
+		font-family: 'Nunito', sans-serif;
+		font-size: 25px;
+	}
 
-  .what-we-offer-cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	.what-we-offer-cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+		grid-row-gap: 50px;
+		align-items: center;
+		justify-content: space-between;
 
-    .what-we-offer-card {
-      width: 100%;
+		@media (max-width: 480px) {
+			grid-template-columns: unset;
+		}
 
-      &:not(:first-child) {
-        margin-left: 50px;
-      }
+		.what-we-offer-card {
+			width: 100%;
 
-      p {
-        color: #959499;
-        margin: 10px 0;
-        line-height: 1.5rem;
-      }
-    }
-  }
+			&:not(:first-child) {
+			}
 
-  .img-container {
-    height: auto;
-    width: 500px;
+			p {
+				color: #959499;
+				margin: 10px 0;
+				line-height: 1.5rem;
+			}
+		}
+	}
 
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
+	.img-container {
+		height: auto;
+		width: 500px;
+
+		@media (max-width: 480px) {
+			width: 100%;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
 `;
