@@ -6,7 +6,7 @@ export const MiniCardStyle = styled.div`
 	&:not(:first-child) {
 		margin-left: 50px;
 
-		@media (max-width: 480px) {
+		@media (max-width: 768px) {
 			margin-left: 0;
 		}
 	}

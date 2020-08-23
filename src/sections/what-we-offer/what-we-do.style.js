@@ -24,13 +24,20 @@ export const WhatWeOfferStyle = styled.div`
 		.what-we-offer-card {
 			width: 100%;
 
-			&:not(:first-child) {
+			@media (min-width: 608px) and (max-width: 1092px) {
+				text-align: center;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
 			}
+
 
 			p {
 				color: #959499;
 				margin: 10px 0;
 				line-height: 1.5rem;
+				width: 95%;
 			}
 		}
 	}

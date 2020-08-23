@@ -45,6 +45,7 @@ export default function Header({ backgroundImg }) {
 							</Link>
 						</li>
 					</ul>
+
 					<div className={`menu-btn ${isMenuOpen ? ' open' : ''}`} onClick={() => setMenuOpen(!isMenuOpen)}>
 						<div className="menu-btn__burger"></div>
 					</div>

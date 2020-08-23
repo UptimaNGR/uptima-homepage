@@ -60,7 +60,7 @@ export const HeaderStyle = styled.div`
 				border-radius: 30px;
 				font-weight: bold;
 
-				@media (max-width: 480px) {
+				@media (max-width: 768px) {
 					border: 0;
 					padding: 0;
 					font-weight: normal;
@@ -71,9 +71,8 @@ export const HeaderStyle = styled.div`
 				color: ${(props) => (props.backgroundImg ? '#fff' : ' #050484')};
 				text-decoration: none;
 				cursor: pointer;
-				font-weight: 300;
 
-				@media (max-width: 480px) {
+				@media (max-width: 768px) {
 					color: #fff;
 					font-size: 17px;
 				}
@@ -101,8 +100,8 @@ export const HeaderStyleContainer = styled.div`
 		cursor: pointer;
 		transition: all 0.5s ease-in-out;
 		display: none;
-		background: transparent;
 		cursor: pointer;
+		height: 20px;
 
 		@media (max-width: 768px) {
 			//CSS
@@ -118,6 +117,7 @@ export const HeaderStyleContainer = styled.div`
 		box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
 		transition: all 0.5s ease-in-out;
 	}
+
 	.menu-btn__burger::before,
 	.menu-btn__burger::after {
 		content: '';

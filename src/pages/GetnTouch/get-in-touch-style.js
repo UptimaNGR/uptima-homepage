@@ -4,8 +4,9 @@ export const GetInTouchStyle = styled.div`
 	margin: 0 auto;
 	height: 100%;
 	overflow: hidden;
+	position: relative;
 
-	@media (max-width: 480px) {
+	@media (max-width: 768px) {
 		position: relative;
 	}
 
@@ -14,7 +15,7 @@ export const GetInTouchStyle = styled.div`
 		color: #fff;
 		height: 80vh;
 
-		@media (max-width: 480px) {
+		@media (max-width: 768px) {
 			height: 200px;
 		}
 
@@ -24,7 +25,7 @@ export const GetInTouchStyle = styled.div`
 			left: 0;
 			z-index: -10;
 
-			@media (max-width: 480px) {
+			@media (max-width: 768px) {
 				height: 50vh;
 			}
 		}
@@ -35,7 +36,7 @@ export const GetInTouchStyle = styled.div`
 			width: 60%;
 			line-height: 1.6rem;
 
-			@media (max-width: 480px) {
+			@media (max-width: 768px) {
 				top: 50px;
 				width: 100%;
 			}
@@ -53,7 +54,7 @@ export const GetInTouchStyle = styled.div`
 			p {
 				font-size: 17px;
 
-				@media (max-width: 480px) {
+				@media (max-width: 768px) {
 					font-size: 16px;
 					font-weight: 300;
 				}
@@ -65,10 +66,9 @@ export const GetInTouchStyle = styled.div`
 		display: flex;
 		justify-content: space-between;
 
-		@media (max-width: 480px) {
+		@media (max-width: 768px) {
 			display: block;
 			margin-bottom: 250px;
-
 			position: relative;
 			top: 200px;
 		}
@@ -82,7 +82,7 @@ export const GetInTouchStyle = styled.div`
 			border-radius: 8px;
 			overflow: hidden;
 
-			@media (max-width: 480px) {
+			@media (max-width: 768px) {
 				top: 0px;
 			}
 
@@ -149,7 +149,11 @@ export const GetInTouchStyle = styled.div`
 				.form-control {
 					display: flex;
 
-					@media (max-width: 480px) {
+					@media (min-width: 768px) and (max-width: 1100px) {
+						display: block;
+					}
+
+					@media (max-width: 468px) {
 						display: block;
 					}
 
@@ -159,12 +163,16 @@ export const GetInTouchStyle = styled.div`
 						flex-direction: column;
 						margin-bottom: 30px;
 
-						@media (max-width: 480px) {
+						@media (max-width: 768px) {
 							margin-bottom: 20px;
 						}
 
 						&:not(:first-child) {
 							margin-left: 30px;
+
+							@media (min-width: 768px) and (max-width: 1111px) {
+								margin-left: 0px;
+							}
 
 							@media (max-width: 480px) {
 								margin-left: 0px;
@@ -201,7 +209,6 @@ export const GetInTouchStyle = styled.div`
 	}
 
 	.next-step {
-		/* position: relative; */
 		h4 {
 			font-size: 22px;
 		}
@@ -210,7 +217,11 @@ export const GetInTouchStyle = styled.div`
 			position: relative;
 			margin-right: 200px;
 
-			@media (max-width: 480px) {
+			@media (min-width: 768px) and (max-width: 1111px) {
+				margin-right: 0px;
+			}
+
+			@media (max-width: 768px) {
 				margin-right: 0px;
 				margin-bottom: 50px;
 			}
@@ -227,7 +238,7 @@ export const GetInTouchStyle = styled.div`
 					position: absolute;
 					top: 0px;
 					left: 0px;
-					height: 76%;
+					height: 79%;
 					content: '';
 					border: 1px solid black;
 				}
@@ -238,7 +249,7 @@ export const GetInTouchStyle = styled.div`
 					margin-left: 30px;
 					margin-bottom: 0;
 
-					@media (max-width: 480px) {
+					@media (max-width: 768px) {
 						font-size: 17px;
 					}
 

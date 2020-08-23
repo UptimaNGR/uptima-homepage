@@ -30,7 +30,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n\ttext-align: center;\n\n\t&:not(:first-child) {\n\t\tmargin-left: 50px;\n\n\t\t@media (max-width: 480px) {\n\t\t\tmargin-left: 0;\n\t\t}\n\t}\n\n\t.mini-card-image {\n\t\theight: 80px;\n\t\twidth: 80px;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\ttext-align: center;\n\n\t&:not(:first-child) {\n\t\tmargin-left: 50px;\n\n\t\t@media (max-width: 768px) {\n\t\t\tmargin-left: 0;\n\t\t}\n\t}\n\n\t.mini-card-image {\n\t\theight: 80px;\n\t\twidth: 80px;\n\t}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
