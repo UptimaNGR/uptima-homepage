@@ -49,28 +49,29 @@ export const HeaderStyle = styled.div`
 			text-decoration: none;
 			list-style: none;
 			margin-left: 40px;
+			padding: 13px 0;
 
 			@media (max-width: 768px) {
 				margin: 1.4rem 0;
-			}
-
-			&:last-child {
-				border: 2px solid ${(props) => (props.backgroundImg ? '#fff' : ' #050484')};
-				padding: 13px 30px;
-				border-radius: 30px;
-				font-weight: bold;
-
-				@media (max-width: 768px) {
-					border: 0;
-					padding: 0;
-					font-weight: normal;
-				}
 			}
 
 			.nav-link {
 				color: ${(props) => (props.backgroundImg ? '#fff' : ' #050484')};
 				text-decoration: none;
 				cursor: pointer;
+
+				&.bordered {
+					border: 2px solid ${(props) => (props.backgroundImg ? '#fff' : ' #050484')};
+					padding: 13px 30px;
+					border-radius: 30px;
+					font-weight: bold;
+
+					@media (max-width: 768px) {
+						border: 0;
+						padding: 0;
+						font-weight: normal;
+					}
+				}
 
 				@media (max-width: 768px) {
 					color: #fff;

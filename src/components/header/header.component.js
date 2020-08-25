@@ -5,6 +5,8 @@ import { ReactComponent as LandingLogo } from 'assets/img/uptima_logo.svg';
 import { useHistory, useLocation } from 'react-router-dom';
 import { Container } from 'App.style';
 import { HashLink as Link } from 'react-router-hash-link';
+import { Link as RouterLink } from 'react-router-dom';
+
 import { useClickAway } from 'react-use';
 
 export default function Header({ backgroundImg }) {
@@ -40,9 +42,9 @@ export default function Header({ backgroundImg }) {
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/get-in-touch">
+							<RouterLink className="nav-link bordered" to="/get-in-touch">
 								Get in Touch
-							</Link>
+							</RouterLink>
 						</li>
 					</ul>
 

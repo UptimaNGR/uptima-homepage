@@ -23,6 +23,9 @@ export const WhatWeOfferStyle = styled.div`
 
 		.what-we-offer-card {
 			width: 100%;
+			position: relative;
+			transition: all 300ms ease;
+			border-radius: 5px;
 
 			@media (min-width: 608px) and (max-width: 1092px) {
 				text-align: center;
@@ -32,12 +35,51 @@ export const WhatWeOfferStyle = styled.div`
 				flex-direction: column;
 			}
 
-
 			p {
 				color: #959499;
 				margin: 10px 0;
 				line-height: 1.5rem;
 				width: 95%;
+			}
+
+			.link {
+				padding: 15px 20px;
+				background: #22c011;
+				color: #fff;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				border-radius: 5px;
+				opacity: 0;
+				transition: all 300ms ease;
+				cursor: pointer;
+				text-decoration: none;
+			}
+
+			&:hover .link {
+				opacity: 1;
+			}
+
+			.coming-soon {
+				padding: 10px 20px;
+				transform: scale(0.8);
+				animation: pulse 2s infinite;
+				text-align: center;
+			}
+
+			@keyframes pulse {
+				0% {
+					transform: scale(0.95);
+				}
+
+				70% {
+					transform: scale(1.2);
+				}
+
+				100% {
+					transform: scale(0.95);
+				}
 			}
 		}
 	}
