@@ -1,7 +1,9 @@
 import styled from 'styled-components';
-import { HashLink as Link } from 'react-router-hash-link';
+import {
+	HashLink as Link
+} from 'react-router-hash-link';
 
-export const BannerStyle = styled.div`
+export const BannerStyle = styled.div `
 	position: relative;
 	z-index: 5;
 	overflow-x: hidden;
@@ -24,7 +26,7 @@ export const BannerStyle = styled.div`
 	}
 `;
 
-export const BannerStyleContainer = styled.div`
+export const BannerStyleContainer = styled.div `
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -37,7 +39,7 @@ export const BannerStyleContainer = styled.div`
 	}
 `;
 
-export const BannerHeading = styled.h3`
+export const BannerHeading = styled.h3 `
 	font-size: 32px;
 	font-family: 'Nunito', sans-serif;
 	margin: 0;
@@ -47,10 +49,10 @@ export const BannerHeading = styled.h3`
 	}
 `;
 
-export const BannerBriefText = styled.h3`
-	font-size: 16px;
+export const BannerBriefText = styled.h3 `
+	font-size: 17px;
 	font-weight: 300;
-	line-height: 1.5rem;
+	line-height: 1.75rem;
 	font-family: 'Rubik', sans-serif;
 
 	@media (max-width: 480px) {
@@ -62,7 +64,8 @@ export const BannerBriefText = styled.h3`
 	}
 `;
 
-export const BannerButton = styled(Link)`
+export const BannerButton = styled(Link)
+`
 	font-size: 14px;
 	font-weight: 600;
 	padding: 18px 40px;
@@ -77,10 +80,11 @@ export const BannerButton = styled(Link)`
 	text-decoration: none;
 `;
 
-export const BannerImgContainer = styled.div`
+export const BannerImgContainer = styled.div `
 	height: 400px;
 	position: relative;
 	top: 30px;
+	left:-40px;
 
 	@media (max-width: 768px) {
 		display: none;
@@ -88,12 +92,12 @@ export const BannerImgContainer = styled.div`
 	}
 `;
 
-export const BannerImg = styled.img`
+export const BannerImg = styled.img `
 	height: auto;
 	width: 100%;
 `;
 
-export const BannerText = styled.div`
+export const BannerText = styled.div `
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -101,4 +105,4 @@ export const BannerText = styled.div`
 	top: 20px;
 `;
 
-export const BannerContainer = styled.div``;
+export const BannerContainer = styled.div ``;

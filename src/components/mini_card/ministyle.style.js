@@ -29,5 +29,5 @@ export const MiniCardBrief = styled.div`
 	color: #959499;
 	margin: 10px 0;
 	line-height: 1.5rem;
-	/* font-size: 15.5px; */
+	font-size: 17px;
 `;

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { TimelineLite } from 'gsap/all';
-import BannerImage from 'assets/img/Group_81.png';
+import BannerImage from 'assets/img/banner_img.png';
 import Bg from 'assets/img/bg.png';
 import {
 	BannerStyle,

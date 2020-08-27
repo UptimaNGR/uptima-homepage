@@ -42,7 +42,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = _taggedTemplateLiteral(["\n\theight: 400px;\n\tposition: relative;\n\ttop: 30px;\n\n\t@media (max-width: 768px) {\n\t\tdisplay: none;\n\t\ttop: 0px;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\theight: 400px;\n\tposition: relative;\n\ttop: 30px;\n\tleft:-40px;\n\n\t@media (max-width: 768px) {\n\t\tdisplay: none;\n\t\ttop: 0px;\n\t}\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -62,7 +62,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n\tfont-size: 16px;\n\tfont-weight: 300;\n\tline-height: 1.5rem;\n\tfont-family: 'Rubik', sans-serif;\n\n\t@media (max-width: 480px) {\n\t\tline-height: 1.5rem;\n\t\tfont-size: 16px;\n\t\tletter-spacing: 0px;\n\t\tfont-weight: 300;\n\t\tmargin-bottom: 40px;\n\t}\n"]);
+  var data = _taggedTemplateLiteral(["\n\tfont-size: 17px;\n\tfont-weight: 300;\n\tline-height: 1.75rem;\n\tfont-family: 'Rubik', sans-serif;\n\n\t@media (max-width: 480px) {\n\t\tline-height: 1.5rem;\n\t\tfont-size: 16px;\n\t\tletter-spacing: 0px;\n\t\tfont-weight: 300;\n\t\tmargin-bottom: 40px;\n\t}\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
