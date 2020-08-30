@@ -32,4 +32,11 @@ export const WhoAreWeText = styled.div`
 		font-size: 25px;
 		color: #050384;
 	}
+
+	p {
+		font-family: 'Nunito', sans-serif;
+		font-weight: 200;
+		font-size: 15px;
+		color: #050384;
+	}
 `;

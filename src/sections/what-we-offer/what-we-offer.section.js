@@ -17,7 +17,7 @@ export default function WhatWeOffer() {
 						within the oil and gas industry.
 					</p>
 
-					<a rel="noopener noreferrer" className="link" target="_blank" href="https:/google.com">
+					<a rel="noopener noreferrer" className="link" target="_blank" href="http://utrack.uptima.ng">
 						Open Link
 					</a>
 				</div>

@@ -28,12 +28,10 @@ export default function Banner() {
 				<BannerStyleContainer>
 					<BannerText>
 						<BannerHeading id="heading">
-							<Typed strings={['We Build Products that Scale.']} typeSpeed={120} />
+							<Typed strings={['We Build Products that Scale.', 'We turn your ideas to products.']} typeSpeed={120} loop/>
 						</BannerHeading>
 						<BannerBriefText>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-							been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-							galley of type and scrambled it to make a type specimen book.
+						We utilize our wide range of knowledge and employ futuristic approaches in helping our clients have the UPTIMA solution for their personalized technological needs. 
 						</BannerBriefText>
 						<BannerButton data-aos="zoom-out" data-aos-duration={2000} to="#who-we-are" offset={-20}>
 							Get Started

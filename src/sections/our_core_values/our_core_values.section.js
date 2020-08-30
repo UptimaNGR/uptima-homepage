@@ -28,7 +28,7 @@ export default function OurCoreValues() {
 		{
 			title: 'Passion',
 			image: <Passion {...config} />,
-			brief: 'We love wha we do.',
+			brief: 'We love what we do.',
 		},
 		{
 			title: 'Team Work',
@@ -43,7 +43,7 @@ export default function OurCoreValues() {
 		{
 			title: 'Accountability',
 			image: <SunShine {...config} />,
-			brief: 'We are personally accountable for devilering on our commitment.',
+			brief: 'We are personally accountable for delivering on our commitment.',
 		},
 	];
 

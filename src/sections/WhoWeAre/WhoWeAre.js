@@ -22,7 +22,7 @@ export default function WhoWeAre() {
 			data_aos: 'zoom-in',
 			data_aos_duration: '700',
 			brief:
-				'To improve life and help businesses realise their full potentail through innovative technological solutions.',
+				'To improve life and help businesses realise their full potential through innovative technological solutions.',
 		},
 		{
 			title: 'Our Vision',
@@ -46,9 +46,8 @@ export default function WhoWeAre() {
 				<WhoAreWeText>
 					<h2>Who are we</h2>
 					<p data-aos="fade-up" data-aos-duration={1000}>
-						Uptima drives innovation across all sectors by using advancement in software and hardware
-						technology. Etiam vitae hendrerit lectus. Ut sed arcu eu lorem imperdiet gravida. Vivamus tellus
-						risus, consectetur ac ornare nec, ullamcorper sed elit. Mauris et vulputate augue.
+						Uptima drives innovation across all sectors by using advancements in software and hardware
+						technology. We are the bridge linking your ideas to real life products.
 					</p>
 				</WhoAreWeText>
 			</WhoAreWeTextContainer>
