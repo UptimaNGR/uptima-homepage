@@ -25,6 +25,7 @@ export const MiniCardHeader = styled.div`
 `;
 
 export const MiniCardBrief = styled.div`
+	font-family: 'Nunito', sans-serif;
 	font-weight: 300;
 	color: #959499;
 	margin: 10px 0;

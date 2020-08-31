@@ -27,7 +27,8 @@ export const BannerStyle = styled.div `
 `;
 
 export const BannerStyleContainer = styled.div `
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 	justify-content: center;
 	align-items: center;
 	position: absolute;
@@ -50,10 +51,9 @@ export const BannerHeading = styled.h3 `
 `;
 
 export const BannerBriefText = styled.h3 `
-	font-size: 17px;
+	font-size: 18px;
 	font-weight: 300;
 	line-height: 1.75rem;
-	font-family: 'Rubik', sans-serif;
 
 	@media (max-width: 480px) {
 		line-height: 1.5rem;
@@ -82,6 +82,7 @@ export const BannerButton = styled(Link)
 
 export const BannerImgContainer = styled.div `
 	height: 400px;
+	width:100%;
 	position: relative;
 	top: 30px;
 	left:-40px;
@@ -92,17 +93,21 @@ export const BannerImgContainer = styled.div `
 	}
 `;
 
-export const BannerImg = styled.img `
+export const BannerImg = styled.img`
 	height: auto;
 	width: 100%;
 `;
 
-export const BannerText = styled.div `
+export const BannerText = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
 	top: 20px;
+
+	@media (min-width: 768px) {
+		padding-right:50px;
+	}
 `;
 
 export const BannerContainer = styled.div ``;

@@ -9,7 +9,7 @@ export default function Routes() {
       <BrowserRouter>
         <Switch>
           <Route path="/" component={LandingPage} exact />
-          <Route path="/get-in-touch" component={GetInTouch} />
+          <Route path="/get-in-touch" component={GetInTouch} exact />
         </Switch>
       </BrowserRouter>
     </div>

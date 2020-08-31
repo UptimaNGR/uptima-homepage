@@ -7,7 +7,7 @@ export default function WhatWeOffer() {
 		<WhatWeOfferStyle id="offer">
 			<h3>What We Offer</h3>
 			<div className="what-we-offer-cards">
-				<div className="what-we-offer-card">
+				<div className="what-we-offer-card" data-aos="slide-left" data-aos-duration={2000}>
 					<div className="img-container">
 						<img src={ShotImg} alt="what-we-offer" />
 					</div>
@@ -18,10 +18,10 @@ export default function WhatWeOffer() {
 					</p>
 
 					<a rel="noopener noreferrer" className="link" target="_blank" href="http://utrack.uptima.ng">
-						Open Link
+						Click here to open
 					</a>
 				</div>
-				<div className="what-we-offer-card right">
+				<div className="what-we-offer-card right" data-aos="slide-right" data-aos-duration={2000}>
 					<div className="img-container">
 						<img src={ShotImg} alt="what-we-offer" />
 					</div>

@@ -1,14 +1,17 @@
 import styled from 'styled-components';
 
 export const CardStyle = styled.div`
-	border: 1px solid green;
-	/* width: 30%; */
 	height: 180px;
 	display: flex;
-	border: 1px solid rgba(0, 0, 0, 0.2);
 	margin-bottom: 50px;
 	border-radius: 6px;
 	overflow: hidden;
+	box-shadow: 0px 5px 10px rgba(0,0,0,.15);
+	transition: transform 300ms ease;
+
+	&:hover{
+		transform: translateY(10px);
+	}
 
 	.card-img {
 		height: 100%;
@@ -17,6 +20,7 @@ export const CardStyle = styled.div`
 		align-self: stretch;
 		position: relative;
 		left: -6px;
+
 	}
 `;
 
@@ -39,5 +43,7 @@ export const CardTextContainer = styled.div`
 	p {
 		font-weight: 300;
 		font-size: 15px;
+		line-height: 1.4rem;
+		font-family: 'Nunito', sans-serif;
 	}
 `;

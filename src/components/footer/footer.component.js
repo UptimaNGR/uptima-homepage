@@ -8,6 +8,7 @@ import { ReactComponent as Facebook } from 'assets/img/facebook.svg';
 import { ReactComponent as In } from 'assets/img/in.svg';
 import { Link } from 'react-router-dom';
 
+
 export default function Footer() {
 	return (
 		<FooterStyle>
@@ -16,7 +17,7 @@ export default function Footer() {
 					<div className="footer-top-content">
 						<div className="contact-us-list">
 							<li>Contact Us</li>
-							<li>24 Oluloye estate, Ibadan,Oyo state.</li>
+							<li>24 Oluloye estate, Ibadan, Oyo state.</li>
 							<li>Uptima.ng</li>
 							<li>info@uptima.ng</li>
 							<li>08140710074</li>
@@ -33,11 +34,12 @@ export default function Footer() {
 						</div>
 
 						<div className="contact-us-btn">
-							<Link to="/get-in-touch">Get in touch</Link>
+							<a href="/get-in-touch" >Get in touch</a>
 						</div>
 					</div>
 
 					<hr />
+				
 					<div className="footer-bottom-content">
 						<div className="brand">
 							<Logo className="logo" />

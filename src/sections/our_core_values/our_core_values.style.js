@@ -4,7 +4,6 @@ export const CardsStyle = styled.div`
 	display: grid;
 
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	/* flex-wrap: wrap; */
 	justify-content: space-between;
 	align-items: center;
 	grid-column-gap: 40px;

@@ -28,7 +28,7 @@ export default function Banner() {
 				<BannerStyleContainer>
 					<BannerText>
 						<BannerHeading id="heading">
-							<Typed strings={['We Build Products that Scale.', 'We turn your ideas to products.']} typeSpeed={120} loop/>
+							<Typed strings={['We Build Products That Scale.', 'We Turn Your Ideas To Products.']} typeSpeed={120} loop/>
 						</BannerHeading>
 						<BannerBriefText>
 						We utilize our wide range of knowledge and employ futuristic approaches in helping our clients have the UPTIMA solution for their personalized technological needs. 

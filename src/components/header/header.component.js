@@ -4,7 +4,7 @@ import { ReactComponent as Logo } from 'assets/img/Logo_1.svg';
 import { ReactComponent as LandingLogo } from 'assets/img/uptima_logo.svg';
 import { useHistory, useLocation } from 'react-router-dom';
 import { Container } from 'App.style';
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink as Link } from 'react-router-hash-link-offset';
 import { Link as RouterLink } from 'react-router-dom';
 
 import { useClickAway } from 'react-use';
@@ -32,12 +32,12 @@ export default function Header({ backgroundImg }) {
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/#who-we-are" smooth={true} duration={500} spy={true}>
+							<Link scrollOffset={200} className="nav-link" to="/#who-we-are" smooth={true} duration={500} spy={true}>
 								About Us
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/#offer" smooth={true} duration={500} spy={true}>
+							<Link scrollOffset={200}  className="nav-link" to="/#offer" smooth={true} duration={500} spy={true}>
 								Offer
 							</Link>
 						</li>

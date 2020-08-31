@@ -12,20 +12,37 @@ export const WhatWeOfferStyle = styled.div`
 
 	.what-we-offer-cards {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+		grid-template-columns: repeat(2fr, minmax(200px, 1fr));
 		grid-row-gap: 50px;
-		align-items: center;
-		justify-content: space-between;
+		grid-column-gap: 50px;
+		grid-auto-flow: column;
+		justify-content: center;
+  		align-content: center;
 
 		@media (max-width: 480px) {
 			grid-template-columns: unset;
 		}
 
 		.what-we-offer-card {
-			width: 100%;
+			width: 350px;
+			height: 400px;
 			position: relative;
 			transition: all 300ms ease;
-			border-radius: 5px;
+			background: white;
+			text-align:center;
+			padding:40px;
+			border-radius:5px;
+			background:#EEF5FF;
+
+			&.right{
+
+				img{
+					filter: blur(10px);
+				}
+			}
+
+			
+
 
 			@media (min-width: 608px) and (max-width: 1092px) {
 				text-align: center;
@@ -35,17 +52,34 @@ export const WhatWeOfferStyle = styled.div`
 				flex-direction: column;
 			}
 
+			h4{
+				font-size:25px;
+				position: relative;
+				display:inline-block;
+
+				&:after{
+					content: "";
+					position:absolute;
+					left:0;
+					bottom: -10px;
+					height:3px;
+					width:60%;
+					background: #FECE38;
+				}
+			}
+
 			p {
-				color: #959499;
+				color: #000;
 				margin: 10px 0;
 				line-height: 1.5rem;
 				width: 95%;
+				font-weight:300;
 			}
 
 			.link {
 				padding: 15px 20px;
-				background: #22c011;
-				color: #fff;
+				background: #FECE38;
+				color: #090483;
 				position: absolute;
 				top: 50%;
 				left: 50%;
@@ -57,6 +91,10 @@ export const WhatWeOfferStyle = styled.div`
 				text-decoration: none;
 			}
 
+			&:hover{
+				transform: translateY(10px);
+			}
+
 			&:hover .link {
 				opacity: 1;
 			}
@@ -66,6 +104,8 @@ export const WhatWeOfferStyle = styled.div`
 				transform: scale(0.8);
 				animation: pulse 2s infinite;
 				text-align: center;
+				color: #000;
+				font-size:19px;
 			}
 
 			@keyframes pulse {
@@ -86,7 +126,9 @@ export const WhatWeOfferStyle = styled.div`
 
 	.img-container {
 		height: auto;
-		width: 500px;
+			border-radius: 3px;
+			overflow:hidden;
+			box-shadow:0 3px 15px rgba(0,0,0,.2);
 
 		@media (max-width: 480px) {
 			width: 100%;
