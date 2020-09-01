@@ -17,7 +17,7 @@ export default function Footer() {
 					<div className="footer-top-content">
 						<div className="contact-us-list">
 							<li>Contact Us</li>
-							<li>24 Oluloye estate, Ibadan, Oyo state.</li>
+							{/* <li>24 Oluloye estate, Ibadan, Oyo state.</li> */}
 							<li>Uptima.ng</li>
 							<li>info@uptima.ng</li>
 							<li>08140710074</li>
