@@ -1,6 +1,7 @@
 import React from 'react';
 import { WhatWeOfferStyle } from './what-we-do.style';
 import ShotImg from 'assets/img/shot.png';
+import utrack from 'assets/img/utrack.gif';
 
 export default function WhatWeOffer() {
 	return (
@@ -9,7 +10,8 @@ export default function WhatWeOffer() {
 			<div className="what-we-offer-cards">
 				<div className="what-we-offer-card" data-aos="slide-left" data-aos-duration={2000}>
 					<div className="img-container">
-						<img src={ShotImg} alt="what-we-offer" />
+            {/* <video src={utrack} width="600" height="300" controls="controls" autoplay="true" /> */}
+            <img src={utrack} alt="what-we-offer" />
 					</div>
 					<h4>U-Track</h4>
 					<p>
