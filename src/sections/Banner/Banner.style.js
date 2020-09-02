@@ -6,7 +6,8 @@ import {
 export const BannerStyle = styled.div `
 	position: relative;
 	z-index: 5;
-	overflow-x: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 	margin-bottom: 60px;
 
 	.banner-img {
@@ -85,7 +86,7 @@ export const BannerImgContainer = styled.div `
 	width:100%;
 	position: relative;
 	top: 30px;
-	left:-40px;
+  left:-40px;
 
 	@media (max-width: 768px) {
 		display: none;
@@ -94,10 +95,12 @@ export const BannerImgContainer = styled.div `
 `;
 
 export const BannerImg = styled.img`
-  // height: auto;
-  width:100%
+  height: auto;
+  // width:100%
   max-width: 100%;
-  max-height: 100%
+  // max-height: 100%
+  background-size: cover;
+  overflow: hidden;
 `;
 
 export const BannerText = styled.div`
