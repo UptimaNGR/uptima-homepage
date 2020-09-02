@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const WhatWeOfferStyle = styled.div`
 	margin-bottom: 100px;
-
+	overflow-x: hidden;
 	h3 {
 		text-align: center;
 		margin-bottom: 40px;
