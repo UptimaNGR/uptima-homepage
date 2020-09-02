@@ -20,7 +20,12 @@ export const WhatWeOfferStyle = styled.div`
   		align-content: center;
 
 		@media (max-width: 480px) {
-			grid-template-columns: unset;
+			// grid-template-columns: unset;
+			display: block;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+			max-width: 100%;
 		}
 
 		.what-we-offer-card {
@@ -33,6 +38,18 @@ export const WhatWeOfferStyle = styled.div`
 			padding:40px;
 			border-radius:5px;
 			background:#EEF5FF;
+			// max-width: 100%;
+			@media (max-width: 480px) {
+				// grid-template-columns: unset;
+				// display: block;
+				// justify-content: center;
+				// align-items: center;
+				// flex-direction: row;
+				max-width: 100%;
+				width: auto;
+				height: auto;
+				margin-bottom: 20px;
+			}
 
 			&.right{
 
