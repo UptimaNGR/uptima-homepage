@@ -39,7 +39,7 @@ export const WhatWeOfferStyle = styled.div`
 			border-radius:5px;
 			background:#EEF5FF;
 			// max-width: 100%;
-			@media (max-width: 480px) {
+			@media (max-width: 768px) {
 				// grid-template-columns: unset;
 				// display: block;
 				// justify-content: center;
