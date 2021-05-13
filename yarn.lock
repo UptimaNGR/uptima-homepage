@@ -8958,10 +8958,10 @@ react-router-hash-link-offset@1.2.0:
   dependencies:
     prop-types "^15.6.0"
 
-react-router-hash-link@2.4.0:
-  version "2.4.0"
-  resolved "https://registry.npmjs.org/react-router-hash-link/-/react-router-hash-link-2.4.0.tgz"
-  integrity sha512-HGbB9kfODHKsHvMVsPbqDr057V4xg4TNNRaQcezsFMKitwHaaU51cM2+gDyX45y9YLLPbovELz2rpNx2C3Frng==
+react-router-hash-link@2.4.3:
+  version "2.4.3"
+  resolved "https://registry.npmjs.org/react-router-hash-link/-/react-router-hash-link-2.4.3.tgz"
+  integrity sha512-NU7GWc265m92xh/aYD79Vr1W+zAIXDWp3L2YZOYP4rCqPnJ6LI6vh3+rKgkidtYijozHclaEQTAHaAaMWPVI4A==
   dependencies:
     prop-types "^15.7.2"
 
