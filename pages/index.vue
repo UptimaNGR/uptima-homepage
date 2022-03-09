@@ -73,7 +73,7 @@
       </div>
     </div>
     <div class="what-we-offer">
-      <h4>What We Offer</h4>
+      <h4>Our Product</h4>
       <div class="what-we-offer__cards">
         <div class="what-we-offer__cards__card what-we-offer__cards__card_1" @mouseenter="hoverOfferCardMouseEnter" @mouseleave="hoverOfferCardMouseLeave">
           <h3>U-Track</h3>
