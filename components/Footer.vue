@@ -4,9 +4,9 @@
       <div class="footer__top__left">
         <h3>Contact Us</h3>
         <ul>
-          <li>24 Oluloye estate, Ibadan, <br> Oyo state.</li>
-          <li>Uptima.ng</li>
-          <li>info@uptima.ng</li>
+          <li>36 Campbell St, Lagos Island <br> Lagos State.</li>
+          <li>Uptima.co</li>
+          <li>info@uptima.co</li>
           <li>08140710074</li>
         </ul>
       </div>
@@ -139,7 +139,7 @@ export default {
       font-size: 14px;
       line-height: 23px;
       justify-self: center;
-      
+
     }
   }
 }

@@ -4,10 +4,10 @@
     <Navbar />
     <div class="hero__below-nav">
       <div class="hero__below-nav__left">
-        <h1 id="boldText">We build products that scale</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet eros at turpis
-          efficitur egestas. Aliquam quis varius mi, id ultrices arcu. Donec lobortis porta 
-          mauris, dapibus ac.
+        <h1 id="boldText">Let us help you {{dynamicText[0]}}</h1>
+        <p>Every minute saved in your business, whether it’s in producing, monitoring, maintenance or management is money saved.
+          <br/>
+          With connected hardware, software, and data analytics we provide you better insight and control of your business.
         </p>
         <button>Get Started</button>
       </div>
@@ -16,10 +16,7 @@
       <div class="who-we-are">
         <div class="who-we-are__left">
           <h3>Who We Are</h3>
-          <p>Uptima drives innovation across all sectors by using advancement in softwareand
-            hardware technology.  Etiam vitae hendrerit lectus. Ut sed arcu eu lorem imperdiet
-            gravida. Vivamus tellus risus, consectetur ac ornare nec, ullamcorper sed elit. 
-            Mauris et vulputate augue.
+          <p>Uptima is a full stack IoT company that designs and develops IoT services, custom software, custom hardware, big data, and machine learning-powered solutions. We help you address manual process and control that are inherently deficient and easily manipulated.
           </p>
         </div>
         <div class="who-we-are__right">
@@ -33,8 +30,8 @@
                 <path d="M12.3561 9.21416C16.8076 9.21416 20.4801 12.8866 20.4801 17.3381C20.4801 21.9009 16.8076 25.5734 12.3561 25.5734C7.79334 25.5734 4.12085 21.9009 4.12085 17.3381C4.12085 12.8866 7.79334 9.21416 12.3561 9.21416ZM12.3561 11.4399C9.0175 11.4399 6.3466 14.1108 6.3466 17.3381C6.3466 20.6768 9.0175 23.3477 12.3561 23.3477C15.5835 23.3477 18.2544 20.6768 18.2544 17.3381C18.2544 14.1108 15.5835 11.4399 12.3561 11.4399Z" fill="#5051DB"/>
                 <path d="M2.56286 37.3699C2.45157 37.9264 1.89514 38.3715 1.3387 38.2602C0.670974 38.2602 0.225824 37.5925 0.337111 37.0361C1.22741 31.1378 6.34664 26.6863 12.3562 26.6863C14.2481 26.6863 16.1399 27.2428 17.9205 28.0218C18.3657 28.3557 18.5883 29.0234 18.3657 29.5798C18.0318 30.1363 17.3641 30.3588 16.8077 30.025C15.4722 29.3572 13.9142 28.9121 12.3562 28.9121C7.45951 28.9121 3.23059 32.4733 2.56286 37.3699Z" fill="#5051DB"/>
               </svg>
-              <h5>About Us</h5>
-              <p>Uptima drives innovation across all sectors by using advancements in software and hardware technology.</p>
+              <h5>Software</h5>
+              <p>We provide off-the-shelf and custom applications that help businesses monitor, analyze and control processes.</p>
             </div>
           </div>
           <div class="two-card">
@@ -66,7 +63,7 @@
       </div>
     </div>
     <div class="our-core">
-      <h4 id="rect">Our Core Values</h4>
+      <h4 id="rect">What We Offer</h4>
       <div class="our-core__cards">
         <div class="our-core__cards__card skewElem" v-for="card in cards" :key="card.id">
           <img :src="card.imgSrc" :alt="card.imgAlt">
@@ -79,15 +76,15 @@
       <h4>What We Offer</h4>
       <div class="what-we-offer__cards">
         <div class="what-we-offer__cards__card what-we-offer__cards__card_1" @mouseenter="hoverOfferCardMouseEnter" @mouseleave="hoverOfferCardMouseLeave">
-          <h3>Device Logistics</h3>
-          <h6>Lorem Ipsum Set Amit</h6>
+          <h3>U-Track</h3>
+          <h6>Fuel Monitoring Solution</h6>
           <p>U-Track is an on demand cloud computing solution for remote monitoring of tanks and tankers within the oil and gas industry.</p>
           <button>Learn More</button>
         </div>
         <div class="what-we-offer__cards__card what-we-offer__cards__card_2" @mouseenter="hoverOfferCardMouseEnter2" @mouseleave="hoverOfferCardMouseLeave2">
-          <h3>Device Logistics</h3>
-          <h6>Lorem Ipsum Set Amit</h6>
-          <p>U-Track is an on demand cloud computing solution for remote monitoring of tanks and tankers within the oil and gas industry.</p>
+          <h3>U-Fleet</h3>
+          <h6>Vehicle Tracking</h6>
+          <p>U-Fleet help Vehicle owners and logistics company keep track of everydetail surrounding their fleet.</p>
           <button>Learn More</button>
         </div>
       </div>
@@ -170,18 +167,19 @@ export default {
   name: 'IndexPage',
   data() {
     return {
+      dynamicText: ['boost productivity', 'boost profitability', 'discover new opportunities'],
       cards: [
         {
           imgSrc: require('../assets/images/commitment.svg'),
-          imgAlt: 'icon for customer commitment',
-          heading: 'Customer Commitment',
-          text: 'We are committed to making sure our customers get utmost satisfaction from our products and services.'
+          imgAlt: 'icon for Application Development',
+          heading: 'Application Development',
+          text: 'We offer world-class website, mobile or desktop application design service that helps business grow.'
         },
         {
           imgSrc: require('../assets/images/win.png'),
-          imgAlt: 'icon a will to win',
-          heading: 'A Will To Win',
-          text: 'We are committed to making sure our customers get utmost satisfaction from our products and services.'
+          imgAlt: 'icon for IoT Devices',
+          heading: 'IoT Devices',
+          text: 'We provide and modify programmable hardware such as sensors, actuators, gadgets and machines that transmit data over the internet for better process visibility.'
         },
         {
           imgSrc: require('../assets/images/passion.svg'),
@@ -191,21 +189,21 @@ export default {
         },
         {
           imgSrc: require('../assets/images/team.svg'),
-          imgAlt: 'icon of team',
-          heading: 'Team Work',
-          text: 'We are committed to making sure our customers get utmost satisfaction from our products and services.'
+          imgAlt: 'icon of hardware',
+          heading: 'Hardware Prototyping & Design',
+          text: 'We help craft models or make design of product. It allows for a discovery phase to confirm or reject initial project hypothesis.'
         },
         {
           imgSrc: require('../assets/images/innovation.svg'),
-          imgAlt: 'icon of innovation',
-          heading: 'Innovation',
-          text: 'We are committed to making sure our customers get utmost satisfaction from our products and services.'
+          imgAlt: 'icon of Big Data',
+          heading: 'Big Data Analytics',
+          text: 'We help companies uncover trends, patterns, and correlations in large amounts of raw data to help them make data-informed decisions.'
         },
         {
           imgSrc: require('../assets/images/accountability.svg'),
-          imgAlt: 'icon of accountability',
-          heading: 'Accountability',
-          text: 'We are committed to making sure our customers get utmost satisfaction from our products and services.'
+          imgAlt: 'icon of mahine learning',
+          heading: 'Machine Learning',
+          text: 'We provide machine learning service that enables companies to explore hidden resources of their data and make profitable business decisions.'
         },
       ]
     }
@@ -218,10 +216,10 @@ export default {
     this.$gsap.to(".overlay", 2, {display:"none"});
 
 
-    // animation for cards 
+    // animation for cards
     let proxy = { skew: 0 },
     skewSetter = this.$gsap.quickSetter(".skewElem", "skewY", "deg"), // fast
-    clamp = this.$gsap.utils.clamp(-20, 20); // don't let the skew go beyond 20 degrees. 
+    clamp = this.$gsap.utils.clamp(-20, 20); // don't let the skew go beyond 20 degrees.
 
     this.$ScrollTrigger.create({
       onUpdate: (self) => {
@@ -581,7 +579,7 @@ export default {
       gap: 0;
     }
     &__left {
-    
+
       h3 {
         max-width: 166px;
         font-style: normal;
