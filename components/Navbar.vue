@@ -12,9 +12,9 @@
           </label>
         </div>
         <ul>
-          <li><nuxt-link to="#">About Us</nuxt-link></li>
-          <li><nuxt-link to="#">Offer</nuxt-link></li>
-          <li><button>Get In Touch</button></li>
+          <li><nuxt-link class="link" to="#whoWeAre">About Us</nuxt-link></li>
+          <li><nuxt-link class="link" to="#whatWeOffer">Offer</nuxt-link></li>
+          <li><a class="button" href="#contactUs">Get In Touch</a></li>
         </ul>
       </nav>
     </div>
@@ -22,9 +22,9 @@
       <!-- <img src="../assets/images/logo-light.svg" alt=""> -->
         <div class="content">
           <ul>
-            <li><nuxt-link to="#">About Us</nuxt-link></li>
-            <li><nuxt-link to="#">Offer</nuxt-link></li>
-            <li><button>Get In Touch</button></li>
+            <li><nuxt-link to="#whoWeAre">About Us</nuxt-link></li>
+            <li><nuxt-link to="#whatWeOffer">Offer</nuxt-link></li>
+            <li><a class="button" href="#contactUs">Get In Touch</a></li>
           </ul>
         </div>
     </div>
@@ -43,7 +43,7 @@ export default {
   margin: auto;
   display: flex;
   justify-content: space-between;
-  padding: 60px 0;
+  padding: 60px 20px;
   @media screen and (max-width: 768px) {
     padding: 20px;
   }
@@ -58,12 +58,16 @@ export default {
         display: none;
       }
       li {
-        a {
+        .link {
           text-decoration: none;
           color: #ffffff;
           font-size: 16px;
+          transition: color .1s ease-in-out, border-bottom .3s ease-in-out;
         }
-        button {
+        .link:hover {
+          border-bottom: 2px solid #ffffff;
+        }
+        .button {
           border: 1px solid #ffffff;
           background: #ffffff;
           border-radius: 40px;
@@ -72,10 +76,15 @@ export default {
           padding: 10px 20px;
           font-size: 16px;
           font-weight: bold;
+          text-decoration: none;
         }
       }
     }
   }
+}
+.home__header__dropdown .link {
+  color: #ffffff;
+  text-decoration: none;
 }
  #nav-check {
   display: none;
@@ -91,12 +100,12 @@ export default {
     text-align: center;
     li {
       margin-top: 20px;
-      a {
+      .link {
         text-decoration: none;
         color: #ffffff;
         font-size: 16px;
       }
-      button {
+      .button {
         border: 1px solid #ffffff;
         background: #ffffff;
         border-radius: 40px;
@@ -105,6 +114,7 @@ export default {
         padding: 10px 20px;
         font-size: 16px;
         font-weight: bold;
+        text-decoration: none;
       }
     }
     .content {

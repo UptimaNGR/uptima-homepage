@@ -12,7 +12,7 @@
         <button>Get Started</button>
       </div>
     </div>
-    <div class="who-we-are__container">
+    <div class="who-we-are__container" id="whoWeAre">
       <div class="who-we-are">
         <div class="who-we-are__left">
           <h3>Who We Are</h3>
@@ -44,8 +44,8 @@
                 <path d="M42.5699 28.5616C46.2394 28.5616 49.2236 31.5458 49.2236 35.2153C49.2236 38.8849 46.2394 41.8691 42.5699 41.8691C38.9003 41.8691 35.9161 38.8849 35.9161 35.2153C35.9161 31.5458 38.9003 28.5616 42.5699 28.5616ZM42.5699 39.6512C45.0162 39.6512 47.0057 37.6617 47.0057 35.2153C47.0057 32.769 45.0162 30.7795 42.5699 30.7795C40.1235 30.7795 38.134 32.769 38.134 35.2153C38.134 37.6617 40.1235 39.6512 42.5699 39.6512Z" fill="#5051DB"/>
                 <path d="M37.2113 61.2149L39.0566 62.4447L37.8778 64.2135C37.32 65.0508 37.025 66.0244 37.025 67.0303C37.025 68.3865 37.5529 69.6618 38.5121 70.6211L42.5698 74.6788L46.6275 70.6211C47.5867 69.6618 48.1146 68.3865 48.1146 67.0303C48.1146 66.0244 47.8196 65.0508 47.2618 64.2135L46.083 62.4447L47.9283 61.2149L49.1071 62.9837C49.9089 64.1858 50.3325 65.5853 50.3325 67.0303C50.3325 68.9787 49.574 70.8118 48.1956 72.1891L43.3538 77.0309C43.1376 77.2471 42.8537 77.3558 42.5698 77.3558C42.2859 77.3558 42.002 77.2471 41.7858 77.0309L36.944 72.1891C35.5656 70.8118 34.8071 68.9787 34.8071 67.0303C34.8071 65.5853 35.2307 64.1858 36.0325 62.9837L37.2113 61.2149Z" fill="#5051DB"/>
               </svg>
-              <h5>About Us</h5>
-              <p>Uptima drives innovation across all sectors by using advancements in software and hardware technology.</p>
+              <h5>Our Mission</h5>
+              <p>To improve life and help businesses realise their full potentail through innovative technological solutions.</p>
             </div>
             <div class="card skewElem">
               <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,8 +58,8 @@
                 <path d="M46.7798 14.9401C46.7798 16.8373 48.3226 18.3801 50.2198 18.3801C52.1169 18.3801 53.6598 16.8373 53.6598 14.9401C53.6598 13.043 52.1169 11.5001 50.2198 11.5001C48.3226 11.5001 46.7798 13.043 46.7798 14.9401ZM50.2198 13.2201C51.1684 13.2201 51.9398 13.9915 51.9398 14.9401C51.9398 15.8887 51.1684 16.6601 50.2198 16.6601C49.2712 16.6601 48.4998 15.8887 48.4998 14.9401C48.4998 13.9915 49.2712 13.2201 50.2198 13.2201Z" fill="#5051DB"/>
                 <path d="M44.1998 10.6403C47.0455 10.6403 49.3598 8.32605 49.3598 5.48031C49.3598 2.63457 47.0455 0.320312 44.1998 0.320312C41.3541 0.320312 39.0398 2.63457 39.0398 5.48031C39.0398 8.32605 41.3541 10.6403 44.1998 10.6403ZM44.1998 2.04031C46.097 2.04031 47.6398 3.58315 47.6398 5.48031C47.6398 7.37747 46.097 8.92031 44.1998 8.92031C42.3026 8.92031 40.7598 7.37747 40.7598 5.48031C40.7598 3.58315 42.3026 2.04031 44.1998 2.04031Z" fill="#5051DB"/>
               </svg>
-              <h5>About Us</h5>
-              <p>Uptima drives innovation across all sectors by using advancements in software and hardware technology.</p>
+              <h5>Our Vision</h5>
+              <p>To be the one-stop for all our clients software,hardware and cloud computiong needs.</p>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@
         </div>
       </div>
     </div>
-    <div class="what-we-offer">
+    <div class="what-we-offer" id="whatWeOffer">
       <h4>What We Offer</h4>
       <div class="what-we-offer__cards">
         <div class="what-we-offer__cards__card what-we-offer__cards__card_1" @mouseenter="hoverOfferCardMouseEnter" @mouseleave="hoverOfferCardMouseLeave">
@@ -92,7 +92,7 @@
         </div>
       </div>
     </div>
-    <div class="contact">
+    <div class="contact" id="contactUs">
       <h4>Contact Us</h4>
       <div class="contact__content">
         <div class="contact__content__left">
@@ -317,6 +317,7 @@ export default {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 100px;
+    padding: 0 20px;
     @media screen and (max-width: 768px) {
       text-align: center;
       display: block;
@@ -343,6 +344,7 @@ export default {
         font-size: 16px;
         line-height: 35PX;
         color: #A4A4A4;
+        margin-top: 10px;
       }
       button {
         height: 70px;
@@ -364,7 +366,7 @@ export default {
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
   gap: 50px;
-  padding: 100px 0;
+  padding: 100px 20px;
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
   }
@@ -397,6 +399,7 @@ export default {
       font-size: 16px;
       line-height: 35px;
       color: #A4A4A4;
+      margin-top: 10px;
     }
   }
   &__right {
@@ -440,6 +443,7 @@ export default {
 .our-core {
   max-width: 1260px;
   margin: auto;
+  padding: 0 20px;
   @media screen and (max-width: 768px) {
     text-align: center;
   }
@@ -487,6 +491,7 @@ export default {
   max-width: 1260px;
   margin: auto;
   margin-top: 50px;
+  padding: 0 20px;
   @media screen and (max-width: 768px) {
     text-align: center;
   }
@@ -552,6 +557,7 @@ export default {
   max-width: 1260px;
   margin: auto;
   margin-top: 50px;
+  padding: 0 20px;
   @media screen and (max-width: 768px) {
     padding: 0 50px;
   }
@@ -565,7 +571,7 @@ export default {
     text-align: center;
   }
   &__content {
-    padding: 100px 0;
+    padding: 50px 0;
     display: grid;
     grid-template-columns: 0.7fr 1fr;
     gap: 100px;
@@ -614,12 +620,12 @@ export default {
             width: 0.2rem;
             position: absolute;
             background: #5051DB;
-            left: 7.3rem;
+            left: 9.5%;
             content: "";
             min-height: 9rem;
             // bottom: -57%;
             margin-top: 28px;
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 1439px) {
               content: none;
             }
             // height: 90%;
@@ -754,7 +760,7 @@ export default {
           margin-top: 34px;
           color: #ffffff;
           border: 1px solid #5051db;
-          padding: 10px 0;
+          padding: 15px 0;
         }
       }
     }
