@@ -5,8 +5,7 @@
         <h3>Contact Us</h3>
         <ul>
           <li>36 Campbell St, Lagos Island <br> Lagos State.</li>
-          <li>Uptima.co</li>
-          <li>info@uptima.co</li>
+          <li><a href="mailto:info@uptima.co" target="_blank">info@uptima.co</a></li>
           <li>08140710074</li>
         </ul>
       </div>
@@ -69,6 +68,7 @@ export default {
 .footer {
   padding: 66px 20px;
   background: #5051DB;
+  width: 100vw;
   @media screen and (max-width: 768px) {
     padding: 50px;
   }
@@ -101,6 +101,10 @@ export default {
           font-style: normal;
           font-weight: normal;
           font-size: 14px;
+          a {
+            color: #FFFFFF;
+            text-decoration: none;
+          }
         }
       }
       // max-width: 172px;
@@ -122,13 +126,11 @@ export default {
     padding-top: 40px;
     max-width: 1260px;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     @media screen and (max-width: 768px) {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
       gap: 27px;
     }
     a {

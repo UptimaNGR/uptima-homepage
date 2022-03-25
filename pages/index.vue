@@ -9,7 +9,7 @@
           <br/>
           With connected hardware, software, and data analytics we provide you better insight and control of your business.
         </p>
-        <button>Get Started</button>
+        <a class="button" href="#contactUs">Get Started</a>
       </div>
     </div>
     <div class="who-we-are__container" id="whoWeAre">
@@ -81,7 +81,7 @@
           <p>U-Track is an on demand cloud computing solution for remote monitoring of tanks and tankers within the oil and gas industry.</p>
           <button>Learn More</button>
         </div>
-        <div class="what-we-offer__cards__card what-we-offer__cards__card_2" @mouseenter="hoverOfferCardMouseEnter2" @mouseleave="hoverOfferCardMouseLeave2">
+        <div class="what-we-offer__cards__card what-we-offer__cards__card_2" @mouseenter="hoverOfferCardMouseEnter2" @mouseleave="hoverOfferCardMouseLeave2" disabled>
           <h3>U-Fleet</h3>
           <h6>Vehicle Tracking</h6>
           <p>U-Fleet help Vehicle owners and logistics company keep track of everydetail surrounding their fleet.</p>
@@ -320,7 +320,6 @@ export default {
       text-align: center;
       display: block;
       grid-template-columns: none;
-      padding: 0 50px;
     }
     &__left {
       grid-column: span 6;
@@ -343,15 +342,15 @@ export default {
         line-height: 35PX;
         color: #A4A4A4;
         margin-top: 10px;
+        margin-bottom: 40px;
       }
-      button {
-        height: 70px;
-        padding: 0 80px;
+      .button {
+        padding: 20px 80px;
         background: #5051DB;
         border-radius: 40px;
         color: #ffffff;
         border: 1px solid #5051DB;
-        margin-top: 42px;
+        text-decoration: none;
       }
     }
   }
@@ -547,6 +546,17 @@ export default {
         margin-top: 20px;
         cursor: pointer;
       }
+      &_2 {
+        cursor: not-allowed;
+        opacity: 0.5;
+        button {
+          cursor: not-allowed;
+        }
+        button:hover {
+          background: #353686;
+          border: 1px solid #353686;
+        }
+      }
     }
   }
 }
@@ -619,7 +629,7 @@ export default {
             position: absolute;
             background: #5051DB;
             left: 9.5%;
-            content: "";
+            // content: "";
             min-height: 9rem;
             // bottom: -57%;
             margin-top: 28px;
@@ -710,11 +720,7 @@ export default {
             outline: 2px solid transparent;
           }
           input:focus::placeholder {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 22px;
-            color: #353686;
-            opacity: 1;
+            opacity: 0;
           }
           input::placeholder {
             font-weight: 500;
@@ -739,11 +745,7 @@ export default {
           outline: 2px solid transparent;
         }
         textarea:focus::placeholder {
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 22px;
-          color: #353686;
-          opacity: 1;
+          opacity: 0;
         }
         textarea::placeholder {
           font-weight: 500;

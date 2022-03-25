@@ -22,8 +22,8 @@
       <!-- <img src="../assets/images/logo-light.svg" alt=""> -->
         <div class="content">
           <ul>
-            <li><nuxt-link to="#whoWeAre">About Us</nuxt-link></li>
-            <li><nuxt-link to="#whatWeOffer">Offer</nuxt-link></li>
+            <li><nuxt-link to="#whoWeAre" class="link">About Us</nuxt-link></li>
+            <li><nuxt-link to="#whatWeOffer" class="link">Offer</nuxt-link></li>
             <li><a class="button" href="#contactUs">Get In Touch</a></li>
           </ul>
         </div>
@@ -46,6 +46,11 @@ export default {
   padding: 60px 20px;
   @media screen and (max-width: 768px) {
     padding: 20px;
+    position: fixed;
+    top: 0;
+    background: #ffffff;
+    width: 100%;
+    z-index: 999;
   }
   &__nav {
     ul {
@@ -92,12 +97,15 @@ export default {
     display: none;
   }
   &:checked ~ .home__header__dropdown {
-    height: calc(100vh);
     display: block;
-    overflow-y: auto;
     background: #5051DB;
     padding: 30px;
     text-align: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    overflow: hidden;
     li {
       margin-top: 20px;
       .link {
