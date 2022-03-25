@@ -1,5 +1,5 @@
 <template>
-  <div>  
+  <div>
     <input type="checkbox" id="nav-check">
     <div class="navigation">
       <img src="../assets/images/logo-dark.svg" alt="">
@@ -33,7 +33,7 @@
 
 <script>
 export default {
-  
+
 }
 </script>
 
