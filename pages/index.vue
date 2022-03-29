@@ -79,7 +79,7 @@
           <h3>U-Track</h3>
           <h6>Fuel Monitoring Solution</h6>
           <p>U-Track is an on demand cloud computing solution for remote monitoring of tanks and tankers within the oil and gas industry.</p>
-          <button>Learn More</button>
+          <button @click="openUtrackLink">Learn More</button>
         </div>
         <div class="what-we-offer__cards__card what-we-offer__cards__card_2" @mouseenter="hoverOfferCardMouseEnter2" @mouseleave="hoverOfferCardMouseLeave2" disabled>
           <h3>U-Fleet</h3>
@@ -136,17 +136,25 @@
             </svg>
             <p>Write us a few words about your project and we’ll prepare a proposal for you within 24 hours.</p>
           </div>
-          <div class="contact__content__right__form">
+          <div v-if="successResponse.length" class="contact__content__right__form success-response">
+            {{ successResponse }}
+          </div>
+          <div v-else class="contact__content__right__form">
             <div class="form_group">
-              <input type="text" placeholder="Enter Name">
-              <input type="email" placeholder="Enter Email">
+              <div>
+                <input type="text" v-model="formData.name" placeholder="Enter Name" required>
+              </div>
+              <div>
+                <input :class="{'error-input' : emailError.length}" type="email" v-model="formData.email" placeholder="Enter Email" required>
+                <span v-if="emailError.length" class="error">{{emailError}}</span>
+              </div>
             </div>
             <div class="form_group">
-              <input type="text" placeholder="Enter Company Name">
-              <input type="text" placeholder="Enter Phone Number">
+              <input type="text" v-model="formData.companyName" placeholder="Enter Company Name">
+              <input type="text" v-model="formData.phoneNumber" placeholder="Enter Phone Number">
             </div>
-            <textarea name="" id="" placeholder="Describe what you’re building"></textarea>
-            <button>Send</button>
+            <textarea v-model="formData.message" name="description" id="description" placeholder="Describe what you’re building"></textarea>
+            <button @click.prevent="submitForm" :disabled="loading">Send</button>
           </div>
         </div>
       </div>
@@ -163,6 +171,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+import { emit } from 'process';
 export default {
   name: 'IndexPage',
   data() {
@@ -205,7 +215,23 @@ export default {
           heading: 'IT Consultancy',
           text: 'We provide advisory services on product development with our team of business-oriented and experienced technology professionals who can work as your dedicated product consultant.'
         },
-      ]
+      ],
+      formData: {
+        email: ''
+      },
+      emailError: '',
+      successResponse: '',
+      loading: false
+    }
+  },
+  watch: {
+    'formData.email' : {
+      immediate: true,
+      handler(val) {
+        if(val) {
+          this.emailError = ''
+        }
+      }
     }
   },
   mounted() {
@@ -268,6 +294,36 @@ export default {
         y: 0,
         stagger: 0.1
       })
+    },
+    openUtrackLink() {
+      window.open('https://utrack.uptima.co/', '_blank')
+    },
+    submitForm() {
+      this.loading = true
+      this.emailError = ''
+
+      const { email, name } = this.formData
+      const  validateEmail = (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+      console.log(validateEmail);
+      console.log(this.formData.email);
+      if (!validateEmail) {
+        this.emailError = 'Please Enter a valid Email'
+      } else if (validateEmail && email && name) {
+        axios.post('http://utrackapi.uptima.co/api/v1/connect', this.formData)
+        .then(res => {
+          if (res.data) {
+            this.successResponse = 'Message Submitted Successfully.'
+            this.formData = {}
+            this.loading = false
+            setTimeout(() => {
+              this.successResponse = ''
+            }, 3000);
+          }
+        }).catch(err => {
+          this.loading = false
+          return err
+        })
+      }
     }
   }
 }
@@ -369,7 +425,7 @@ export default {
   }
   .one-card, .two-card {
     @media screen and (max-width: 768px) {
-      padding: 0 50px;
+      padding: 0 20px;
     }
   }
   &__container {
@@ -381,7 +437,7 @@ export default {
     grid-column: span 6;
     @media screen and (max-width: 768px) {
       text-align: center;
-      padding: 0 50px;
+      padding: 0 20px;
     }
     h3 {
       font-style: normal;
@@ -458,7 +514,7 @@ export default {
     gap: 20px;
     @media screen and (max-width: 768px) {
       grid-template-columns: 1fr;
-      padding: 0 50px;
+      padding: 0 20px;
     }
     &__card {
       background: #FFFFFF;
@@ -506,7 +562,7 @@ export default {
     gap: 20px;
     @media screen and (max-width: 768px) {
       grid-template-columns: 1fr;
-      padding: 0 50px;
+      padding: 0 20px;
     }
     &__card {
       background: #FFFFFF;
@@ -567,7 +623,7 @@ export default {
   margin-top: 50px;
   padding: 0 20px;
   @media screen and (max-width: 768px) {
-    padding: 0 50px;
+    padding: 0 20px;
   }
   h4 {
     font-style: normal;
@@ -715,6 +771,9 @@ export default {
             width: 100%;
             padding: 12px 24px;
           }
+          div {
+            width: 100%;
+          }
           input:focus {
             border: 1px solid #353686;
             outline: 2px solid transparent;
@@ -771,5 +830,27 @@ button{
   &:hover {
     background: rgba(80, 81, 219, 0.9);
   }
+}
+
+//form error
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.success-response {
+  color: green;
+  font-size: 36px;
+  text-align: center;
+}
+.error-input {
+  border: 1px solid red !important;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }
 </style>

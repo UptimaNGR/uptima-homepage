@@ -1,8 +1,10 @@
 <template>
   <div>
-    <input type="checkbox" id="nav-check">
+    <input type="checkbox" id="nav-check" v-model="checkNav" value="checked">
     <div class="navigation">
-      <img src="../assets/images/logo-dark.svg" alt="">
+      <nuxt-link to="/">
+        <img src="../assets/images/logo-dark.svg" alt="logo">
+      </nuxt-link>
       <nav class="navigation__nav">
         <div class="nav-btn">
           <label for="nav-check" id="nav-icon4">
@@ -22,9 +24,9 @@
       <!-- <img src="../assets/images/logo-light.svg" alt=""> -->
         <div class="content">
           <ul>
-            <li><nuxt-link to="#whoWeAre" class="link">About Us</nuxt-link></li>
-            <li><nuxt-link to="#whatWeOffer" class="link">Offer</nuxt-link></li>
-            <li><a class="button" href="#contactUs">Get In Touch</a></li>
+            <li @click="closeNav"><nuxt-link to="#whoWeAre" class="link">About Us</nuxt-link></li>
+            <li @click="closeNav"><nuxt-link to="#whatWeOffer" class="link">Offer</nuxt-link></li>
+            <li @click="closeNav"><a class="button" href="#contactUs">Get In Touch</a></li>
           </ul>
         </div>
     </div>
@@ -33,6 +35,18 @@
 
 <script>
 export default {
+  name: 'Navbar',
+  data() {
+    return {
+      isOpen: false,
+      checkNav: false
+    }
+  },
+  methods: {
+    closeNav() {
+      this.checkNav = false
+    }
+  }
 
 }
 </script>
