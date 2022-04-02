@@ -180,13 +180,13 @@ export default {
       dynamicText: ['boost productivity.', 'boost profitability.', 'discover new opportunities.'],
       cards: [
         {
-          imgSrc: require('../assets/images/commitment.svg'),
+          imgSrc: require('../assets/images/application-development.svg'),
           imgAlt: 'icon for Application Development',
           heading: 'Application Development',
           text: 'We offer world-class website, mobile or desktop application design service that helps business grow.'
         },
         {
-          imgSrc: require('../assets/images/win.png'),
+          imgSrc: require('../assets/images/innovation.svg'),
           imgAlt: 'icon for IoT Devices',
           heading: 'IoT Devices',
           text: 'We provide and modify programmable hardware such as sensors, actuators, gadgets and machines that transmit data over the internet for better process visibility.'
